@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="split left">
+    <h1>FACULTY</h1>
+    
+    <a href="The Bug Slayers-Faculty/index.html" class="button">click here</a>
+  </div>
+  <div class="split right">
+    <h1>STUDENT</h1>
+    
+    <a href="The Bug Slayers-Students/index.html" class="button">click here</a>
+  </div>
+</div>
+
+<script>
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const container = document.querySelector(".container");
+
+left.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
+
+
+
+</script>
+
+</body>
+</html>

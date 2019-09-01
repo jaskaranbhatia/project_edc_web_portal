@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New details </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="title_icon.png" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" src="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Faculty Details</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">
+                        <button class="btn btn-success">Back to Homepage</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+
+            <div class="page-header bg-primary text-center">
+                <h1 style="color:white">Add new Faculty</h1>
+                <hr>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="formId" onsubmit="return onFormSub()">
+                <div class="form-group">
+                    <label for="text">Student Roll No.:</label>
+                    <input type="number" class="form-control" id="sname" placeholder="Enter Faculty ID" name="sname" pattern="[A-Za-z ]{3,}"
+					title="Name should only contain alphabets and should be greater than 3 letters.">
+                </div>
+                <div class="form-group">
+                    <label for="number">Student Name:</label>
+                    <input type="text" class="form-control" id="sid" placeholder="Enter Faculty Name" name="sid">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Subject 1:</label>
+                    <input type="text" class="form-control" id="syear" placeholder="Enter Department" name="syear">
+                </div>
+                <div class="form-group">
+                    <label for="text">Subject 2:</label>
+                    <input type="text" class="form-control" id="sstream" placeholder="Enter Subjects Assigned" name="sstream">
+                </div>
+                <div class="form-group">
+                    <label for="text">Batch Assigned:</label>
+                    <input type="text" class="form-control" id="sstream1" placeholder="Enter Batches Assigned" name="sstream1">
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+                <span>
+                    <i>All fields are required.</i>
+                </span>
+
+            </form>
+        </div>
+    </main>
+    <div id="result"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

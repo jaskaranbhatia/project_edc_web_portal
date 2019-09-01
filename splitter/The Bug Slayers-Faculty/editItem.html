@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edit details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="title_icon.png" />
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" src="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="fillEditFormPage();">
+    <header>
+        <div class="container">
+            <div class="page-header bg-primary  text-center">
+                <h1 style="color:white">Edit Details</h1>
+                <hr>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form onsubmit="return onFormSub();">
+                <div class="form-group">
+                    <label for="text">Faculty ID:</label>
+                    <input type="number" class="form-control" id="sname" placeholder="Enter Faculty ID" name="sname" pattern="[A-Za-z ]{3,}" 
+					title="Name should only contain alphabets and should be greater than 3 letters.">
+                </div>
+                <div class="form-group">
+                    <label for="number">Faculty Name</label>
+                    <input type="text" class="form-control" id="sid" placeholder="Enter student Id" name="sid">
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Department</label>
+                    <input type="text" class="form-control" id="syear" placeholder="Department" name="syear">
+                </div>
+                <div class="form-group">
+                    <label for="text">Subjects Assigned</label>
+                    <input type="text" class="form-control" id="sstream" placeholder="Enter Subjects Assigned" name="sstream">
+                </div>
+                <div class="form-group">
+                    <label for="text">Batches Assigned</label>
+                    <input type="text" class="form-control" id="sstream1" placeholder="Enter Batches Assigned" name="sstream1">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
